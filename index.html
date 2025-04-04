@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Roman Numeral List</h2>
+  <ol type="I">
+    <li>Planning</li>
+    <li>Design</li>
+    <li>Implementation</li>
+    <li>Monitoring</li>
+    <li>Evaluation</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Beautiful Landscape</h2>
+  <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Nature Image from Pexels" width="600">
+
+  <!-- Contact Table -->
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>123 Main St, Nairobi</td>
+        <td>+254712345678</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>456 Side Rd, Mombasa</td>
+        <td>+254798765432</td>
+        <td>jane@example.com</td>
+      </tr>
+      <tr>
+        <td>Samuel Kariuki</td>
+        <td>789 Up Rd, Nakuru</td>
+        <td>+254701234567</td>
+        <td>samuel@example.com</td>
+      </tr>
+      <tr>
+        <td>Linda Wambui</td>
+        <td>321 Down St, Kisumu</td>
+        <td>+254711223344</td>
+        <td>linda@example.com</td>
+      </tr>
+      <tr>
+        <td>Kevin Otieno</td>
+        <td>654 Hill Rd, Eldoret</td>
+        <td>+254733445566</td>
+        <td>kevin@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+
+    <!-- Name Field -->
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email Field -->
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Password Field -->
+    <label for="password">Password *</label>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+    <!-- Date Field -->
+    <label for="dob">Date of Birth *</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <!-- Dropdown -->
+    <label for="country">Country *</label>
+    <select id="country" name="country" required>
+      <option value="">--Select Country--</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Tanzania">Tanzania</option>
+      <option value="Rwanda">Rwanda</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <label><h3>Gender *</h3></label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label><br><br>
+
+    <!-- Checkboxes -->
+    <label><h3>Interests</h3></label><br>
+    <input type="checkbox" id="tech" name="interests" value="Tech">
+    <label for="tech">Technology</label><br>
+    <input type="checkbox" id="sports" name="interests" value="Sports">
+    <label for="sports">Sports</label><br>
+    <input type="checkbox" id="music" name="interests" value="Music">
+    <label for="music">Music</label><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
